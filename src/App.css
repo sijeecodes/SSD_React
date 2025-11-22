@@ -1,0 +1,151 @@
+#root {
+  text-align: center;
+}
+
+.shopping-cart {
+  max-width: 55rem;
+  padding: 0 20px;
+  margin: 2.5rem auto;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+  color: #222222;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  vertical-align: top;
+  width: 20rem;
+  min-height: 18rem;
+  padding: 0  1.5rem 1.5rem 1.5rem;
+  margin: 0 1rem 1rem 1rem;
+  border-radius: 0.3rem;
+  background: #f5f5f5;
+}
+
+.h2 {
+  margin: 0 0 20px 0;
+  color: #222222;
+  font-size: 1.4rem;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.3rem;
+  background-color: white;
+  color: #222222;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 1px solid #333333;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #626dff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background: #4450ff;
+}
+
+.total-bar {
+  padding: 1rem 1rem;
+  margin-bottom: 20px;
+  border-radius: 0.3rem;
+  background: #dceeff;
+  color: #222222;
+  font-weight: 700;
+}
+
+.total-number {
+  color: #222222;
+  font-weight: 600;
+}
+
+.cart-items-empty {
+  color: #999999;
+  font-style: italic;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  background-color: white;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.3rem;
+}
+
+.cart-item-name {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.cart-item-qty {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #999999;
+}
+
+.remove-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #e53e3e;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.remove-btn:hover {
+  background: #c53030;
+}
+
+@media (max-width: 54rem) {
+  .shopping-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 23rem;
+  }
+}
