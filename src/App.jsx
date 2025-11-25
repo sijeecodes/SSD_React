@@ -20,14 +20,14 @@ function App() {
             },
         ]);
 
-        setTotalQty((prev) => prev + qty);
+        setTotalQty((prev) => prev + Number(qty));
         setName("");
         setQty("");
     };
 
     const removeItem = (id) => {
+        setTotalQty(totalQty - Number(cartArr.find((i) => i.id == id).quantity));
         setCartArr(cartArr.filter((i) => i.id != id));
-        setTotalQty(qty - 1);
     };
 
     return (
